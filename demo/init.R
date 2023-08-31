@@ -1,7 +1,7 @@
 # Clear workspace
 rm(list=ls())
 # Load user functions
-source(file.path("lib","KBStat.R"))
+source(file.path("..", "kbstatRlib","KBStat.R"))
 # Set output directory
 outdir = "results"
 # Read data

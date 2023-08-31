@@ -1,0 +1,33 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: Erster_Blick_auf_das_Tuch_Prozent ~ Leistung + Variante + Variante:Leistung +      (1 | Proband) + (1 | Proband:Variante)
+   Data: data
+Control: lmerControl(optimizer = "bobyqa")
+
+     AIC      BIC   logLik deviance df.resid 
+   990.8   1013.9   -488.4    976.8      193 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.41209 -0.65878  0.05777  0.72039  2.50426 
+
+Random effects:
+ Groups           Name        Variance Std.Dev.
+ Proband:Variante (Intercept) 4.181    2.045   
+ Proband          (Intercept) 2.050    1.432   
+ Residual                     6.026    2.455   
+Number of obs: 200, groups:  Proband:Variante, 22; Proband, 11
+
+Fixed effects:
+                    Estimate Std. Error      df t value Pr(>|t|)    
+(Intercept)          42.7413     0.6631 11.0630  64.460 1.33e-15 ***
+Leistung1            -2.0404     0.6631 11.0630  -3.077   0.0105 *  
+Variante1             5.0603     0.4881 11.0743  10.367 4.87e-07 ***
+Leistung1:Variante1  -0.2210     0.4881 11.0743  -0.453   0.6594    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Lstng1 Varnt1
+Leistung1   -0.267              
+Variante1   -0.009 -0.004       
+Lstng1:Vrn1 -0.004 -0.009 -0.262
